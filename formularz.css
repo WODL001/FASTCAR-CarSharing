@@ -1,0 +1,39 @@
+﻿
+form{
+    width:500px;
+    margin: 20px auto;
+}
+
+label{
+    width:150px;
+    display:inline-block;
+    background-color:red;
+    color:white;
+    font-size:20px;
+    font-family:;
+    padding:4px;
+    border:1px red;
+}
+
+input {
+    margin: 4px;
+    font-size: 20px;
+    font-family: black;
+}
+input:focus{
+    background-color:rgba(225, 201, 201, 0.80);
+}
+em{
+    color:black;
+    font-weight:bolder;
+}
+
+fieldset{
+    padding:15px;
+    border-radius:10px;
+    border:2px black;
+}
+
+legend{
+    font: bold 20px Arial;
+}

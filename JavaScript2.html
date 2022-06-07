@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Szablon</title>
+
+    <style>
+        h1, h2 {
+            color: #5c68ea;
+            text-align: center;
+        }
+        /*h2{
+            text-align:center;
+        }*/
+    </style>
+    <link href="styl_uklad.css" type="text/css" rel="stylesheet" />
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <header><h1> To jest nagłówek całej strony</h1> </header>
+    <nav>
+      <h2 style="color:blue; background-color:antiquewhite"> Menu </h2>
+      <ul>
+          <li><a href="index.html"> Strona głowna </a> </li>
+          <li><a href="http://www.put.poznan.pl" target="_blank"> strona zewnetrzna - PP </a> </li>
+          <li><a href="artykul.html"> Artykuł </a> </li>
+          <li><a href="tabelka pracownicy.html"> Tabelka - pracownicy </a> </li>
+          <li><a href="formularz.html"> Formularz </a> </li>
+          <li><a href=""> JavaScript I </a> </li>
+          <li><a href=""> JavaScript II</a> </li>
+          <li><a href=""> Tabelka JS </a> </li>
+          <li><a href=""> Canvas 1 </a> </li>
+          <li><a href=""> Canvas 2 </a> </li>
+      </ul>
+    
+    </nav>
+    <article>
+        <script>
+            let zmienna = "Ala ma kota i rybki";
+            alert(zmienna.length);
+
+            document.write(zmienna.charAt(4) + "<br>");
+            document.write(zmienna.charAt(zmienna.length - 1) + "<br>");
+
+            for (var i = 0; i < zmienna.length; i++) {
+                document.write(zmienna.charAt(i) + "<br>");
+                for (var j = 0; j <= i; j++) {
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+
+            document.write("<br>"+zmienna.toUpperCase() + "<br>");
+            document.write(zmienna.toLowerCase() + "<br>");
+            document.write(zmienna.substring(0, 3) + "<br>");
+
+        </script>
+        
+    </article>
+    <aside> <iframe src=""></iframe>  </aside>
+    <footer> Stopka całej strony</footer>
+
+
+</body>
+</html>

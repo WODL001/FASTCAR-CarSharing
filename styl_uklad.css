@@ -1,0 +1,50 @@
+﻿*{
+    box-sizing:border-box;
+}
+body {
+    background-color:Grey;
+    width:1024px;
+    height:1000px;
+    margin:auto;
+}
+nav, article, aside{
+    display:block;
+    height:750px;
+    border:1px red;
+    float:left;
+}
+nav{
+    width:200px;
+    background-color:red;
+}
+article{
+    width:600px;
+    background:radial-gradient(circle at 600px 600px, 
+    #3bf 5%,#9df 15%, #6cf 70%)
+    padding:5px;
+    overflow:auto;
+}
+aside{
+    width:224px;
+    background-color:black;
+}
+body> header {
+    display: block;
+    width: 1024px;
+    height: 150px;
+    border: 1px red;
+}
+body>footer {
+    display: block;
+    width: 1024px;
+    border: 1px solid black;
+    height: 100px;
+    clear:both;
+    background-color:red;
+}
+iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+

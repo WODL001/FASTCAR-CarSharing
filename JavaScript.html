@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Szablon</title>
+
+    <style>
+        h1, h2 {
+            color: #5c68ea;
+            text-align: center;
+        }
+        /*h2{
+            text-align:center;
+        }*/
+    </style>
+    <link href="styl_uklad.css" type="text/css" rel="stylesheet" />
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <header><h1> To jest nagłówek całej strony</h1> </header>
+    <nav>
+      <h2 style="color:blue; background-color:antiquewhite"> Menu </h2>
+      <ul>
+          <li><a href="index.html"> Strona głowna </a> </li>
+          <li><a href="http://www.put.poznan.pl" target="_blank"> strona zewnetrzna - PP </a> </li>
+          <li><a href="artykul.html"> Artykuł </a> </li>
+          <li><a href="tabelka pracownicy.html"> Tabelka - pracownicy </a> </li>
+          <li><a href="formularz.html"> Formularz </a> </li>
+          <li><a href=""> JavaScript I </a> </li>
+          <li><a href=""> JavaScript II</a> </li>
+          <li><a href=""> Tabelka JS </a> </li>
+          <li><a href=""> Canvas 1 </a> </li>
+          <li><a href=""> Canvas 2 </a> </li>
+      </ul>
+    
+    </nav>
+    <article>
+        <script>
+            alert("Hello world");
+            document.write("witaj 34 <br>");
+
+            var a="abc";
+            f = 34;
+
+            document.write("zmienna a ma typ =" + typeof (a) + "<br>");
+            document.write("zmienna f ma typ =" + typeof (f) + "<br>");
+
+            document.write("zm f = " + f + " < br > ");
+
+                var txt = prompt("podaj swoje imie:");
+            document.write("Witaj <b>" + txt + "</b>na stronie o HTML");
+
+            if (txt == "Igor") {
+                alert("ok");
+            }
+            else {
+                alert("błąd");
+            }
+            document.write("<br>");
+            for (let i = 1; i < 10; i++) {
+                document.write("linia numer: " + (i + 1) + "<br>");
+            }
+            let c;
+            const t = 12;
+
+            const tab = [1, 2, 3, 5, 89];
+
+            tab[0] = 4;
+
+            for (let i = 0; i < tab.lenght; i++) {
+                document.write("tab[" + i + "]= " + tab[i] + "<br>");
+            }
+
+        </script>
+    </article>
+    <aside> <iframe src=""></iframe>  </aside>
+    <footer> Stopka całej strony</footer>
+
+
+</body>
+</html>

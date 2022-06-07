@@ -1,0 +1,35 @@
+﻿nav ul, nav ul li{
+    display:block;
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+
+nav ul{
+    width:175px;
+    padding:2px 2px 1px 2px;
+    background-color:grey;
+    border:3px double blue;
+}
+
+nav ul li{
+    border-bottom:1px solid #0125f8;
+}
+
+nav ul a:link, nav ul a:visited{
+    display:block;
+    width:160px;
+    text-decoration:none;
+    font-weight:bold;
+    background-color:gray;
+    color:black;
+    border-left:10px red;
+    padding:10px;
+}
+
+nav ul a:hover{
+    width:150px;
+    border-left: 25px solid #0125f8;
+    color:white;
+    background-color:black;
+}

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Szablon</title>
+
+    <style>
+        
+        h1, h2 {
+            color: #5c68ea;
+            text-align: center;
+        }
+        /*h2{
+            text-align:center;
+        }*/
+    </style>
+    <link href="styl_uklad.css" type="text/css" rel="stylesheet" />
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+    <style>
+        canvas{
+            background-color:white;
+            border:1px dashed red;
+        }
+    </style>
+    <script>
+        var canvas1, context1;
+        var canvas2, context2;
+        window.onload = function () {
+            this.canvas1 = document.getElementById("plotno1");
+            this.context1 = this.canvas1.getContext("2d");
+            this.canvas2 = document.getElementById("plotno2");
+            this.context2 = this.canvas2.getContext("2d");
+
+            //this.context1.rect(0, 0, 30, 30);
+            //this.context1.rect(50, 50, 30, 30);
+            //this.context1.rect(100, 100, 30, 30);
+
+
+            this.context1.rect(0, 0, 30, 30);
+            this.context1.translate(50, 50);
+            this.context1.rect(0, 0, 30, 30);
+            this.context1.translate(50, 50);
+            this.context1.scale(0.5, 1);
+            this.context1.rect(0, 0, 30, 30);
+            this.context1.scale(2, 1);
+            this.context1.translate(50, 50);
+            this.context1.rect(0, 0, 30, 30);
+            this.context1.stroke();
+            this.context2.translate(this.canvas2.width / 2, this.canvas2.height / 2);
+        }
+        function rysuj(liczba) {
+            context2.beginPath();
+            let kat0 = (liczba > 1) ? 2 * Math.PI / liczba : 0;
+            context2.rect(0, 0, 60, 60);
+            for (var i = 0; i < liczba; i++) {
+                context2.rotate(kat0);
+                context2.rect(0, 0, 60, 60);
+               
+            }
+            context2.stroke();
+        }
+      
+        function czysc() {
+            context1.clearRect(0, 0, canvas1.width, canvas1.height);
+            context2.clearRect(-250, -250, canvas2.width, canvas2.height);
+        }
+    </script>
+</head>
+<body>
+    <header><h1> To jest nagłówek całej strony</h1> </header>
+    <nav>
+      <h2 style="color:blue; background-color:antiquewhite"> Menu </h2>
+      <ul>
+          <li><a href="index.html"> Strona głowna </a> </li>
+          <li><a href="http://www.put.poznan.pl" target="_blank"> strona zewnetrzna - PP </a> </li>
+          <li><a href="artykul.html"> Artykuł </a> </li>
+          <li><a href="tabelka pracownicy.html"> Tabelka - pracownicy </a> </li>
+          <li><a href="formularz.html"> Formularz </a> </li>
+          <li><a href=""> JavaScript I </a> </li>
+          <li><a href=""> JavaScript II</a> </li>
+          <li><a href=""> Tabelka JS </a> </li>
+          <li><a href=""> Canvas 1 </a> </li>
+          <li><a href=""> Canvas 2 </a> </li>
+      </ul>
+    
+    </nav>
+    <article>
+        <h2> Canvas 2 </h2>
+
+        <canvas id="plotno1" width="500" height="300"></canvas>
+        <br />
+        <hr />
+        <input type="button" value="rysuj" onclick="rysuj(ile.value)"/>
+        <input type="number" id="ile" value="10" />
+        <input type="button" value="czysc" onclick="czysc()" />
+        <canvas id="plotno2" width="500" height="500"></canvas>
+
+
+
+    </article>
+    <aside> <iframe src="kontrolkiJS.html"></iframe>  </aside>
+    <footer> Stopka całej strony</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Formularz</title>
+
+    <style>
+        h1, h2 {
+            color: black;
+            text-align: center;
+        }
+        /*h2{
+            text-align:center;
+        }*/
+    </style>
+    <link href="styl_uklad.css" type="text/css" rel="stylesheet" />
+    <link href="formularz.css" rel="stylesheet" />
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+   <header><h1> Wypożyczalnia samochodów FASTCAR CarSharing</h1> 
+    <center> <img src="auto.jpg" alt="tu był rys. o CSS" <img src="auto.jpg" alt="Trulli" width="150" height"80"> </center>
+    <nav>
+      <h2 style="color:red; background-color:black"> Menu </h2>
+      <ul>
+          <li><a href="index.html"> Strona głowna </a> </li>
+          <li><a href="http://www.put.poznan.pl" target="_blank"> strona zewnetrzna - PP </a> </li>
+          <li><a href="artykul.html"> Artykuł </a> </li>
+          <li><a href="Cennik.html"> Cennik </a> </li>
+          <li><a href="formularz.html"> Formularz </a> </li>
+          <li><a href="Informacje o nas.html">Inormacje o nas </a> </li>
+          <li><a href="Pytania do nas.html"> Pytania do nas </a> </li>
+          <li><a href="Punkty odbioru.html"> Punkty odbioru </a> </li>
+           <li><a href="Nasi Partnerzy.html"> Nasi Partnerzy </a> </li>
+           <li><a href="Prezentacja.html"> Prezentacja</a> </li>
+          <li><a href="Kontakt.html"> Kontakt</a> </li>
+      </ul>
+    
+    </nav>
+    <article>
+       <h2>Formularz danych osobowych klienta</h2>
+       <form action="mailto:wojciech.dlugosz@student.put.poznan.pl"
+             method="post">
+
+           <p>
+               Prosze wypełnić ten formularz !!!<br />
+               Obowiązkowe pola oznaczono znakiem <em>*</em>
+           </p>
+           <fieldset>
+               <legend>Dane kontaktowe</legend>
+               <label for="imie"> Imię<em>*</em>: </label>
+               <input type="text" name="imie" id="imie" autofocus
+                      placeholder="podaj swoje imię" required /> <br />
+
+               <label for="nazwisko"> Nazwisko: </label>
+               <input type="text" name="nazwisko" id="nazwisko" /><br />
+
+               <label for="telefon">Nr telefonu: </label>
+               <input type="tel" name="telefon" id="telefon"
+                      placeholder="(+48) xxx-xxx-xxx" required /><br />
+
+               <label for="mail"> E-mail: </label>
+               <input type="email" name="mail" id="mail" required /> <br />
+           </fieldset>
+           <fieldset>
+               <legend>Samochody</legend>
+               <label>
+                   <input type="checkbox" name="Lamborghini Huracan" id="Lamborgini Huracan" />Lamborghini Huracan
+               </label><br />
+               <label>
+                   <input type="checkbox" name="Bentley Continental GT" id="Bentley Continental GT" />Bentley Continental GT
+               </label><br />
+               <label>
+                   <input type="checkbox" name="Ferrari 458" id="Ferrari 458" />Ferrari 458
+               </label><br />
+               <label>
+                   <input type="checkbox" name="Audi RS4" id="Audi RS4" />Audi RS4
+               </label><br />
+               
+           </fieldset>
+           <fieldset>
+               <legend>Dane do umowy</legend>
+
+               <label for="miasto"> Miasto<em>*</em>: </label>
+               <input type="text" name="miasto" id="miasto" autofocus
+                      required /> <br />
+               <label for="Kod"> Kod pocztowy<em>*</em>: </label>
+               <input type="text" name="Kod" id="Kod" autofocus
+                      required placeholder="00-000" /> <br />
+               <label for="Ulica"> Ulica<em>*</em>: </label>
+               <input type="text" name="Ulica" id="Ulica" autofocus
+                      required /> <br />
+
+               <label for="nr"> Nr domu<em>*</em>: </label>
+               <input type="number" name="nr" id="nr" autofocus
+                      required /> <br />
+               <label for="data"> Preferowana data odbioru samochodu:<em>*</em>: </label>
+               <input type="date" name="data" id="data" /><br />
+
+           </fieldset>
+
+           <fieldset>
+               <legend>Czas posiadania prawa jazdy</legend>
+               <label for="Czas"> Czas: </label><br />
+               <input type="radio" id="czas" name="czas" /> 0-2 <br />
+               <input type="radio" id="czas" name="czas" checked /> 3-10 <br />
+               <input type="radio" id="czas" name="czas" /> 10-12 <br />
+               <input type="radio" id="czas" name="czas" /> 13-20 <br />
+               <input type="radio" id="czas" name="czas" /> 20<  <br />
+               <label for="płeć"> Płeć: </label><br />
+               <select id="płeć" name="płeć">
+                   <option value="kobieta"> Kobieta </option>
+                   <option value="mężczyzna"> Mężczyzna </option>
+               </select>
+               <br />
+               <label for="Uwagi"> Uwagi: </label><br />
+               <textarea cols="30" rows="10">  </textarea>
+           </fieldset>
+
+           <p>
+               <input type="submit" value="Wyślij formularz" />
+               <input type="reset" value="Kasuj formularz" />
+           </p>
+       </form>
+       <img src="HomeB.png" width="35" height="35" alt="" title="" usemap="#mapa" /> 
+        <map name="mapa" id="mapa">
+            <br> <center> <area shape="rect" coords="1, 1, 101, 30" href="index.html" alt="Strona główna" title="Strona główna" />
+            <area shape="rect" coords="1, 48, 101, 77" href="index.html" alt="Strona główna" title="Strona główna" /> </center> </br>
+    </article>
+    <aside> <iframe src=""></iframe>  </aside>
+    <footer> Wojciech Długosz 145527 <br /><br />
+    wojciech.dlugosz@student.put.poznan.pl <br />
+    </footer>
+
+</body>
+</html>
